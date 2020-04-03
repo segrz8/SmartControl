@@ -1,12 +1,28 @@
 import React from 'react';
 import './App.scss';
+import simpleParallax from 'simple-parallax-js'
 
 import logo from './img/logoSC.jpg';
-import bus from './img/bus.jpg';
+import logoS from './img/logoSCs.jpg';
+import busB from './img/busB.jpg';
 
 class App extends React.Component {
 
 	// state = {}
+
+	handleScroll = (section) => {
+		document.querySelector(`.${section}`).scrollIntoView({
+			behavior: 'smooth',
+		})
+	}
+
+	componentDidMount = () => {
+		const image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image, {
+			scale: 1.3,
+			delay: .8,
+		});
+	}
 
 	render() {
 		return (
@@ -14,15 +30,18 @@ class App extends React.Component {
 				<div className="App__logo">
 					<picture>
 						<source media="(min-width: 461px)" srcSet={logo} />
-						<img src={logo} className="d-block w-100 App__mainImg" alt="logo" />
+						<img src={logoS} className="App__mainImg" alt="logo" />
 					</picture>
 				</div>
 				<div className="App__mainImg">
 					<picture>
-						<source media="(min-width: 461px)" srcSet={bus} />
-						<img src={bus} className="d-block w-100" alt="bus" />
+						<source media="(min-width: 461px)" srcSet={busB} />
+						<img src={busB} className="thumbnail" alt="bus" />
 					</picture>
 				</div>
+				<button onClick={() => this.handleScroll('App__about')} className="App__btnAbout btn">O nas</button>
+				<button onClick={() => this.handleScroll('App__services')} className="App__btnServices btn">Usługi</button>
+				<button onClick={() => this.handleScroll('App__contact')} className="App__btnContact btn">Kontakt</button>
 				<section className="App__about">
 					<h1>O firmie</h1>
 					<p>Nasza firma działa na wielu obszarach rynku, jednym z nich jest kontrola dokumentów przewozu (biletów). SMARTCONTROL działa w oparciu o wieloletnie doświadczenie i wysokie kwalifikacje Pracowników. Posiadamy czytniki kart mifare odpowiadające bileterkom EMAR oraz terminale płatnicze.</p>
@@ -32,35 +51,37 @@ class App extends React.Component {
 				<section className="App__services">
 					<h1>Usługi świadczone przez SMARTCONTROL</h1>
 					<p>Oprócz kontroli dokumentu przewozu oferujemy:</p>
-					<div className="App__service">
-						<div className="App__iconContainer">
-							<i className="fas fa-bus-alt"></i>
+					<div className="App__servicesFlex">
+						<div className="App__service">
+							<div className="App__iconContainer">
+								<i className="fas fa-bus-alt"></i>
+							</div>
+							<h1>Wynajmy autokarów</h1>
 						</div>
-						<h1>Wynajmy autokarów</h1>
-					</div>
-					<div className="App__service">
-						<div className="App__iconContainer">
-							<i className="fas fa-search-dollar"></i>
+						<div className="App__service">
+							<div className="App__iconContainer">
+								<i className="fas fa-search-dollar"></i>
+							</div>
+							<h1>Windykacja</h1>
 						</div>
-						<h1>Windykacja</h1>
-					</div>
-					<div className="App__service">
-						<div className="App__iconContainer">
-							<i className="fas fa-broom"></i>
+						<div className="App__service">
+							<div className="App__iconContainer">
+								<i className="fas fa-broom"></i>
+							</div>
+							<h1>Usługi sprzątające</h1>
 						</div>
-						<h1>Usługi sprzątające</h1>
-					</div>
-					<div className="App__service">
-						<div className="App__iconContainer">
-							<i className="fas fa-truck-monster"></i>
+						<div className="App__service">
+							<div className="App__iconContainer">
+								<i className="fas fa-truck-monster"></i>
+							</div>
+							<h1>Serwis ogumienia i wulkanizacja</h1>
 						</div>
-						<h1>Serwis ogumienia i wulkanizacja</h1>
-					</div>
-					<div className="App__service">
-						<div className="App__iconContainer">
-							<i className="fas fa-sign"></i>
+						<div className="App__service">
+							<div className="App__iconContainer">
+								<i className="fas fa-sign"></i>
+							</div>
+							<h1>Reklama, bilbordy itp.</h1>
 						</div>
-						<h1>Reklama, bilbordy itp.</h1>
 					</div>
 				</section>
 				<section className="App__reference">
