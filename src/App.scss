@@ -19,7 +19,7 @@ html {
 
     &__mainImg {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
 
         .simpleParallax {
@@ -42,6 +42,7 @@ html {
 
         @media(orientation: landscape) {
             background-color: #fff;
+            width: 100%;
         }
 
         img {
