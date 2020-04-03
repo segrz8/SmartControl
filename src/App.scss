@@ -13,6 +13,9 @@ html {
 
 .App {
     color: rgb(53, 53, 53);
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__mainImg {
         height: 100vh;
@@ -62,24 +65,39 @@ html {
         text-transform: uppercase;
         font-weight: 700;
         border: 3px solid $logo-red;
+        cursor: pointer;
+        transition: .2s;
     }
 
     &__btnContact {
         bottom: 30px;
         background-color: transparent;
         color: $logo-red;
+
+        &:hover {
+            background-color: $logo-red;
+        }
     }
 
     &__btnServices {
         bottom: 80px;
         background-color: $logo-red;
         color: white;
+
+        &:hover {
+            background-color: transparent;
+            color: $logo-red;
+        }
     }
 
     &__btnAbout {
         bottom: 130px;
         background-color: transparent;
         color: $logo-red;
+
+        &:hover {
+            background-color: $logo-red;
+        }
     }
 
     &__about {
@@ -101,6 +119,10 @@ html {
 
             @media(min-width: 1024px) {
                 padding: 0 100px 10px;
+            }
+
+            @media(min-width: 1400px) {
+                padding: 0 400px 10px;
             }
         }
 
@@ -144,6 +166,10 @@ html {
             flex-wrap: wrap;
             padding: 50px 100px;
         }
+
+        @media(min-width: 1400px) {
+            padding: 50px 400px;
+        }
     }
 
     &__service {
@@ -155,6 +181,10 @@ html {
 
         @media(min-width: 1024px) {
             flex-basis: 50%;
+        }
+
+        @media(min-width: 1400px) {
+            flex-basis: 33%;
         }
 
         i {
@@ -189,6 +219,10 @@ html {
             @media(min-width: 1024px) {
                 padding: 0 100px 10px;
             }
+
+            @media(min-width: 1400px) {
+                padding: 0 400px 10px;
+            }
         }
 
         .bold {
@@ -220,6 +254,10 @@ html {
 
             @media(min-width: 1024px) {
                 padding: 0 100px 10px;
+            }
+
+            @media(min-width: 1400px) {
+                padding: 0 400px 10px;
             }
 
             li {
@@ -261,6 +299,10 @@ html {
 
             @media(min-width: 1024px) {
                 padding: 0 100px 10px;
+            }
+
+            @media(min-width: 1400px) {
+                padding: 0 400px 10px;
             }
 
             a {
