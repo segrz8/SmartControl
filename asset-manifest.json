@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SmartControl/static/css/main.91fa67bb.chunk.css",
-    "main.js": "/SmartControl/static/js/main.72fabaf7.chunk.js",
-    "main.js.map": "/SmartControl/static/js/main.72fabaf7.chunk.js.map",
+    "main.js": "/SmartControl/static/js/main.b136c790.chunk.js",
+    "main.js.map": "/SmartControl/static/js/main.b136c790.chunk.js.map",
     "runtime-main.js": "/SmartControl/static/js/runtime-main.20de275e.js",
     "runtime-main.js.map": "/SmartControl/static/js/runtime-main.20de275e.js.map",
     "static/js/2.6a17001f.chunk.js": "/SmartControl/static/js/2.6a17001f.chunk.js",
     "static/js/2.6a17001f.chunk.js.map": "/SmartControl/static/js/2.6a17001f.chunk.js.map",
     "index.html": "/SmartControl/index.html",
-    "precache-manifest.0af6186b4087beba95ec6acc878eab54.js": "/SmartControl/precache-manifest.0af6186b4087beba95ec6acc878eab54.js",
+    "precache-manifest.3e8118785321a4446fb2b2b6fcb8c149.js": "/SmartControl/precache-manifest.3e8118785321a4446fb2b2b6fcb8c149.js",
     "service-worker.js": "/SmartControl/service-worker.js",
     "static/css/main.91fa67bb.chunk.css.map": "/SmartControl/static/css/main.91fa67bb.chunk.css.map",
     "static/js/2.6a17001f.chunk.js.LICENSE.txt": "/SmartControl/static/js/2.6a17001f.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.20de275e.js",
     "static/js/2.6a17001f.chunk.js",
     "static/css/main.91fa67bb.chunk.css",
-    "static/js/main.72fabaf7.chunk.js"
+    "static/js/main.b136c790.chunk.js"
   ]
 }
