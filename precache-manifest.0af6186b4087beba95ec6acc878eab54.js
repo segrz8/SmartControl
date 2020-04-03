@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20be3bfc0a9a5c31db4ec739763c6822",
+    "revision": "aff11e5fa1a2f36101b4e652bc4fa1ae",
     "url": "/SmartControl/index.html"
   },
   {
-    "revision": "b7176f08b36e69d22b75",
-    "url": "/SmartControl/static/css/main.634c7840.chunk.css"
+    "revision": "765e5b514cbce3fa6e84",
+    "url": "/SmartControl/static/css/main.91fa67bb.chunk.css"
   },
   {
     "revision": "a2dd8870ba7b67ecfd5c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SmartControl/static/js/2.6a17001f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7176f08b36e69d22b75",
+    "revision": "765e5b514cbce3fa6e84",
     "url": "/SmartControl/static/js/main.72fabaf7.chunk.js"
   },
   {
