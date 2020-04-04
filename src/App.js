@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import simpleParallax from 'simple-parallax-js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
 
@@ -12,18 +11,6 @@ import logo from './img/logoSC.jpg';
 import logoS from './img/logoSCs.jpg';
 
 class App extends React.Component {
-
-	// state = {}
-
-
-
-	componentDidMount = () => {
-		const image = document.getElementsByClassName('thumbnail');
-		new simpleParallax(image, {
-			scale: 1.3,
-			delay: .8,
-		});
-	}
 
 	render() {
 		return (

@@ -1,15 +1,12 @@
 import React from 'react';
 import '../App.scss';
 import { Link } from 'react-router-dom';
+import simpleParallax from 'simple-parallax-js'
 
 import bus from '../img/bus.jpg';
 import busS from '../img/busS.jpg';
 
 class Main extends React.Component {
-
-    abc = ''
-
-    // state = {  }
 
     handleScroll = (section) => {
         document.querySelector(`.${section}`).scrollIntoView({
@@ -33,7 +30,15 @@ class Main extends React.Component {
     }
 
     componentDidMount = () => {
+        // SlideIn
         window.addEventListener('scroll', this.handleServiceSlideIn)
+
+        // Parallax
+        const image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image, {
+            scale: 1.4,
+            delay: .8,
+        });
     }
 
     componentWillUnmount = () => {
