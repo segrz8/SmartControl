@@ -4,7 +4,8 @@ import simpleParallax from 'simple-parallax-js'
 
 import logo from './img/logoSC.jpg';
 import logoS from './img/logoSCs.jpg';
-import busB from './img/busB.jpg';
+import bus from './img/bus.jpg';
+import busS from './img/busS.jpg';
 
 class App extends React.Component {
 
@@ -24,6 +25,23 @@ class App extends React.Component {
 		});
 	}
 
+	componentDidMount = () => {
+		window.addEventListener('scroll', function () {
+			const scrollValue = window.scrollY
+			const service = document.querySelector('.App__service')
+			const serviceTop = service.offsetTop
+			const serviceHeight = service.offsetHeight
+			const windowHeight = window.innerHeight
+			if (scrollValue > serviceTop + serviceHeight - windowHeight) {
+				const list = document.querySelectorAll('.App__service')
+				function add(item) {
+					item.classList.add('App__service--visible')
+				}
+				list.forEach(add)
+			}
+		})
+	}
+
 	render() {
 		return (
 			<div className="App">
@@ -35,16 +53,17 @@ class App extends React.Component {
 				</div>
 				<div className="App__mainImg">
 					<picture>
-						<source media="(min-width: 461px)" srcSet={busB} />
-						<img src={busB} className="thumbnail" alt="bus" />
+						<source media="(min-width: 461px)" srcSet={bus} />
+						<img src={busS} className="thumbnail" alt="bus" />
 					</picture>
 				</div>
-				<button onClick={() => this.handleScroll('App__about')} className="App__btnAbout btn">O nas</button>
-				<button onClick={() => this.handleScroll('App__services')} className="App__btnServices btn">Usługi</button>
-				<button onClick={() => this.handleScroll('App__contact')} className="App__btnContact btn">Kontakt</button>
+				<div onClick={() => this.handleScroll('App__about')} className="App__btnAbout btn">O nas</div>
+				<div onClick={() => this.handleScroll('App__services')} className="App__btnServices btn">Usługi</div>
+				<div onClick={() => this.handleScroll('App__contact')} className="App__btnContact btn">Kontakt</div>
 				<section className="App__about">
 					<h1>O firmie</h1>
 					<p>Nasza firma działa na wielu obszarach rynku, jednym z nich jest kontrola dokumentów przewozu (biletów). SMARTCONTROL działa w oparciu o wieloletnie doświadczenie i wysokie kwalifikacje Pracowników. Posiadamy czytniki kart mifare odpowiadające bileterkom EMAR oraz terminale płatnicze.</p>
+					<p>Nasza firma wykorzystuje własnego autorstwa program online do kontroli biletów, w którym kontrolerzy raportują o ilosci sprawdzonych biletów i wystawionych wezwaniach.</p>
 					<p className="bold">Naszym klientom oferujemy usługi na wysokim poziomie za rozsądną cenę.</p>
 					<p>Zapraszamy do współpracy.</p>
 				</section>
@@ -91,11 +110,11 @@ class App extends React.Component {
 				<section className="App__contact">
 					<h1>Kontakt</h1>
 					<ul>
-						<li><span className="bold">Kontrola biletów, informacja</span><br />tel. 600 - 618 - 405</li>
+						<li><span className="bold">Kontrola biletów, informacja</span><br />tel. 600 - 618 - 405<br /><a target="_blank" rel="noopener noreferrer" href="mailto: kontrola@smartkontrol.pl"> kontrola@smartkontrol.pl</a></li>
 						<li><span className="bold">Wynajmy turystyczne i okazjonalne</span><br />tel. 511 - 022 - 003</li>
+						<li><span className="bold">Windykacja</span><br /><a target="_blank" rel="noopener noreferrer" href="mailto: Windykacja@smartkontrol.pl"> Windykacja@smartkontrol.pl</a></li>
 						<li><span className="bold">Serwis Ogumienia, Wulkanizacja</span><br />ul. Lipowa 3, 21-100 Lubartów<br />tel. 509 - 433 - 337</li>
 						<li><span className="bold">Usługi Sprzątające</span><br />tel. 600 - 618 - 405</li>
-						<li><span className="bold">smartcontrol.pl</span><br /><a target="_blank" rel="noopener noreferrer" href="mailto: bok@smartkontrol.pl"> bok@smartkontrol.pl</a><br />tel. 600 - 618 - 405</li>
 					</ul>
 				</section>
 				<footer className="App__footer">

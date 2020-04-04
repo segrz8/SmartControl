@@ -68,6 +68,7 @@ html {
         border: 3px solid $logo-red;
         cursor: pointer;
         transition: .2s;
+        // outline: none;
     }
 
     &__btnContact {
@@ -75,8 +76,10 @@ html {
         background-color: transparent;
         color: $logo-red;
 
-        &:hover {
-            background-color: $logo-red;
+        @media(min-width: 1024px) {
+            &:hover {
+                background-color: $logo-red;
+            }
         }
     }
 
@@ -85,9 +88,11 @@ html {
         background-color: $logo-red;
         color: white;
 
-        &:hover {
-            background-color: transparent;
-            color: $logo-red;
+        @media(min-width: 1024px) {
+            &:hover {
+                background-color: transparent;
+                color: $logo-red;
+            }
         }
     }
 
@@ -96,8 +101,10 @@ html {
         background-color: transparent;
         color: $logo-red;
 
-        &:hover {
-            background-color: $logo-red;
+        @media(min-width: 1024px) {
+            &:hover {
+                background-color: $logo-red;
+            }
         }
     }
 
@@ -179,6 +186,9 @@ html {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+        opacity: 0;
+        transition: .5s;
+        transform: translate(-30%);
 
         @media(min-width: 1024px) {
             flex-basis: 50%;
@@ -195,6 +205,11 @@ html {
 
         h1 {
             font-size: 1.1em;
+        }
+
+        &--visible {
+            opacity: 1;
+            transform: translate(0);
         }
     }
 
@@ -263,7 +278,7 @@ html {
 
             li {
                 margin: 0 35px 10px;
-                line-height: 1.3;
+                line-height: 1.5;
 
                 @media(min-width: 1024px) {
                     margin: 0;
