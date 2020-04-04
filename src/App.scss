@@ -68,23 +68,6 @@ html {
         border: 3px solid $logo-red;
         cursor: pointer;
         transition: .2s;
-        // outline: none;
-    }
-
-    &__btnContact {
-        bottom: 30px;
-        background-color: transparent;
-        color: $logo-red;
-
-        @media(min-width: 1024px) {
-            &:hover {
-                background-color: $logo-red;
-            }
-        }
-    }
-
-    &__btnServices {
-        bottom: 80px;
         background-color: $logo-red;
         color: white;
 
@@ -96,8 +79,21 @@ html {
         }
     }
 
-    &__btnAbout {
+    &__btnContact {
+        bottom: 30px;
+    }
+
+    &__btnReferences {
+        bottom: 80px;
+        text-decoration: none;
+    }
+
+    &__btnServices {
         bottom: 130px;
+    }
+
+    &__btnAbout {
+        bottom: 180px;
         background-color: transparent;
         color: $logo-red;
 
@@ -218,32 +214,6 @@ html {
         justify-content: center;
         align-items: center;
         padding-top: 20px;
-    }
-
-    &__reference {
-        padding-top: 25px;
-
-        @media(min-width: 1024px) {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        p {
-            padding: 0 15px 10px;
-            line-height: 1.3;
-
-            @media(min-width: 1024px) {
-                padding: 0 100px 10px;
-            }
-
-            @media(min-width: 1400px) {
-                padding: 0 400px 10px;
-            }
-        }
-
-        .bold {
-            font-weight: 700;
-        }
     }
 
     &__contact {
