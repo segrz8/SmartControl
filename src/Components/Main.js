@@ -43,6 +43,7 @@ class Main extends React.Component {
 
     componentWillUnmount = () => {
         window.removeEventListener('scroll', this.handleServiceSlideIn)
+        console.log(1)
     }
 
     render() {
@@ -116,13 +117,13 @@ class Main extends React.Component {
                     <p>ul. Chełmska 25A/35</p>
                     <p>00-724 Warszawa</p>
                     <p>KRS: 0000834389</p>
-                    <p>REGON: 060145766</p>
-                    <p>NIP: 9461195940</p>
+                    <p>REGON: 385809507</p>
+                    <p>NIP: 521-389-35-62</p>
                     <p><i className="fas fa-envelope"></i><a target="_blank" rel="noopener noreferrer" href="mailto: bok@smartkontrol.pl"> bok@smartkontrol.pl</a></p>
                     <p><Link to='/Rodo'>Klauzula informacyjna RODO</Link></p>
                 </footer>
                 <div className="App__copyright">
-                    <p>Copyright © 2020 SMARTCONTROL - wszelkie prawa zastrzeżone</p>
+                    <p>Copyright © 2020 SMARTCONTROL - wszelkie prawa zastrzeżone. Projekt i wykonanie: Sebastian Grzelak</p>
                 </div>
             </div>
         );
