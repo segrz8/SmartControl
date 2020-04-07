@@ -176,7 +176,11 @@ html {
         }
     }
 
-    &__service {
+    &__service1,
+    &__service2,
+    &__service3,
+    &__service4,
+    &__service5 {
         width: 70vw;
         margin-left: auto;
         margin-right: auto;

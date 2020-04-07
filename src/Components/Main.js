@@ -15,17 +15,15 @@ class Main extends React.Component {
     }
 
     handleServiceSlideIn = () => {
-        const scrollValue = window.scrollY
-        const service = document.querySelector('.App__service')
-        const serviceTop = service.offsetTop
-        const serviceHeight = service.offsetHeight
-        const windowHeight = window.innerHeight
-        if (scrollValue > serviceTop + serviceHeight - windowHeight) {
-            const list = document.querySelectorAll('.App__service')
-            function add(item) {
-                item.classList.add('App__service--visible')
+        for (let i = 1; i < 6; i++) {
+            const scrollValue = window.scrollY
+            const service = document.querySelector(`.App__service${i}`)
+            const serviceTop = service.offsetTop
+            const serviceHeight = service.offsetHeight
+            const windowHeight = window.innerHeight
+            if (scrollValue > serviceTop + serviceHeight - windowHeight) {
+                service.classList.add(`App__service${i}--visible`)
             }
-            list.forEach(add)
         }
     }
 
@@ -70,31 +68,31 @@ class Main extends React.Component {
                     <h1>Usługi świadczone przez SMARTCONTROL</h1>
                     <p>Oprócz kontroli dokumentu przewozu oferujemy:</p>
                     <div className="App__servicesFlex">
-                        <div className="App__service">
+                        <div className="App__service1">
                             <div className="App__iconContainer">
                                 <i className="fas fa-bus-alt"></i>
                             </div>
                             <h1>Wynajmy autokarów</h1>
                         </div>
-                        <div className="App__service">
+                        <div className="App__service2">
                             <div className="App__iconContainer">
                                 <i className="fas fa-search-dollar"></i>
                             </div>
                             <h1>Windykacja</h1>
                         </div>
-                        <div className="App__service">
+                        <div className="App__service3">
                             <div className="App__iconContainer">
                                 <i className="fas fa-broom"></i>
                             </div>
                             <h1>Usługi sprzątające</h1>
                         </div>
-                        <div className="App__service">
+                        <div className="App__service4">
                             <div className="App__iconContainer">
                                 <i className="fas fa-truck-monster"></i>
                             </div>
                             <h1>Serwis ogumienia i wulkanizacja</h1>
                         </div>
-                        <div className="App__service">
+                        <div className="App__service5">
                             <div className="App__iconContainer">
                                 <i className="fas fa-sign"></i>
                             </div>
