@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/SmartControl/static/css/main.900ff969.chunk.css",
-    "main.js": "/SmartControl/static/js/main.c7b58d24.chunk.js",
-    "main.js.map": "/SmartControl/static/js/main.c7b58d24.chunk.js.map",
-    "runtime-main.js": "/SmartControl/static/js/runtime-main.20de275e.js",
-    "runtime-main.js.map": "/SmartControl/static/js/runtime-main.20de275e.js.map",
-    "static/js/2.fd36d9c3.chunk.js": "/SmartControl/static/js/2.fd36d9c3.chunk.js",
-    "static/js/2.fd36d9c3.chunk.js.map": "/SmartControl/static/js/2.fd36d9c3.chunk.js.map",
-    "index.html": "/SmartControl/index.html",
-    "precache-manifest.3b5ac7cb087424930268ccaccdad9b03.js": "/SmartControl/precache-manifest.3b5ac7cb087424930268ccaccdad9b03.js",
-    "service-worker.js": "/SmartControl/service-worker.js",
-    "static/css/main.900ff969.chunk.css.map": "/SmartControl/static/css/main.900ff969.chunk.css.map",
-    "static/js/2.fd36d9c3.chunk.js.LICENSE.txt": "/SmartControl/static/js/2.fd36d9c3.chunk.js.LICENSE.txt",
-    "static/media/bus.jpg": "/SmartControl/static/media/bus.92633e05.jpg",
-    "static/media/busS.jpg": "/SmartControl/static/media/busS.81444e96.jpg",
-    "static/media/logoSC.jpg": "/SmartControl/static/media/logoSC.bf38f078.jpg",
-    "static/media/logoSCs.jpg": "/SmartControl/static/media/logoSCs.f44f9cde.jpg"
+    "main.css": "/static/css/main.0668bfea.chunk.css",
+    "main.js": "/static/js/main.ab88c4b2.chunk.js",
+    "main.js.map": "/static/js/main.ab88c4b2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5f7d9ab.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5f7d9ab.js.map",
+    "static/js/2.fd36d9c3.chunk.js": "/static/js/2.fd36d9c3.chunk.js",
+    "static/js/2.fd36d9c3.chunk.js.map": "/static/js/2.fd36d9c3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.eedfcb6b642112775feb098218592a3a.js": "/precache-manifest.eedfcb6b642112775feb098218592a3a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0668bfea.chunk.css.map": "/static/css/main.0668bfea.chunk.css.map",
+    "static/js/2.fd36d9c3.chunk.js.LICENSE.txt": "/static/js/2.fd36d9c3.chunk.js.LICENSE.txt",
+    "static/media/bus.jpg": "/static/media/bus.92633e05.jpg",
+    "static/media/busS.jpg": "/static/media/busS.81444e96.jpg",
+    "static/media/logoSC.jpg": "/static/media/logoSC.bf38f078.jpg",
+    "static/media/logoSCs.jpg": "/static/media/logoSCs.f44f9cde.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.20de275e.js",
+    "static/js/runtime-main.e5f7d9ab.js",
     "static/js/2.fd36d9c3.chunk.js",
-    "static/css/main.900ff969.chunk.css",
-    "static/js/main.c7b58d24.chunk.js"
+    "static/css/main.0668bfea.chunk.css",
+    "static/js/main.ab88c4b2.chunk.js"
   ]
 }
